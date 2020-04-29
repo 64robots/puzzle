@@ -1,0 +1,54 @@
+{
+  "name": "@64robots/PACKAGE_NAME",
+  "author": "64Robots",
+  "license": "MIT",
+  "version": "0.1.27",
+  "description": "Set of customizable components made with Tailwindcss",
+  "main": "dist/PACKAGE_NAME.ssr.js",
+  "browser": "dist/PACKAGE_NAME.esm.js",
+  "module": "dist/PACKAGE_NAME.esm.js",
+  "unpkg": "dist/PACKAGE_NAME.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "node_modules/.bin/eslint ./",
+    "serve": "vue-cli-service serve src/dev.js",
+    "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
+    "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
+    "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
+    "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/64robots/PACKAGE_NAME"
+  },
+  "bugs": {
+    "url": "https://github.com/64robots/PACKAGE_NAME/issues"
+  },
+  "homepage": "https://github.com/64robots/PACKAGE_NAME#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@rollup/plugin-alias": "^3.1.0",
+    "@rollup/plugin-babel": "^5.0.0",
+    "@rollup/plugin-commonjs": "^11.1.0",
+    "@rollup/plugin-replace": "^2.3.2",
+    "@vue/cli-service": "^4.3.1",
+    "cross-env": "^7.0.2",
+    "eslint": "^5.13.0",
+    "minimist": "^1.2.5",
+    "rollup": "^2.7.3",
+    "rollup-plugin-terser": "^4.0.4",
+    "rollup-plugin-vue": "4.7.1",
+    "vue": "^2.6.11",
+    "vue-template-compiler": "^2.6.4",
+    "vuepress": "^1.4.1"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.11"
+  },
+  "engines": {
+    "node": ">=8"
+  }
+}
