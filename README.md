@@ -24,7 +24,7 @@ Install the dependencies
 yarn
 ```
 
-For developtment you can start a local server
+For development you can start a local server
 ```bash
 yarn serve
 ```
